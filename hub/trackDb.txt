@@ -1,0 +1,109 @@
+##
+# varRep
+##
+track ASat_SF
+shortLabel ASat SF
+longLabel ASat SF classification: monomer-by-monomer annotation of human alpha satellite superfamilies
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl AS-SF-vs-HG002_asm_v1.0.bb
+priority 1
+
+##
+# varRep
+##
+track ASat_Strand
+shortLabel ASat Strand
+longLabel ASat Strand assignment for SF monomers
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl AS-strand-vs-HG002_asm_v1.0.bb
+priority 1
+
+
+
+##
+# varRep
+##
+track ASat_HOR
+shortLabel ASat HOR
+longLabel ASat HOR classification: monomer-by-monomer annotation of human alpha satellite HORs
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl AS-HOR-vs-HG002_asm_v1.0.bb
+priority 1
+
+##
+# varRep
+##
+track ASat_StV
+shortLabel ASat StV
+longLabel ASat Structural Variation of Higher Order Repeats
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl HG002_asm_v1.0_verkko_v1.0_HOR_StV.bb
+priority 1
+
+
+##
+# varRep
+##
+track ASat_for_CenSat
+shortLabel ASat for CenSat
+longLabel ASat Annotation For Final CenSat Track
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl HG002_asat_summary.bb
+priority 1
+
+
+##
+# varRep
+##
+track HSat2_HSat3
+shortLabel HSat2_HSat3
+longLabel HSat2 and HSat3 arrays
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl hg002v1.0.HSat2and3_Regions.bb
+priority 1
+
+
+##
+# varRep
+##
+track RM_for_CenSat
+shortLabel RM for CenSat
+longLabel Repeat Masker Track For CenSat
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 4 + 6
+bigDataUrl hg002v1.0.RM.bb
+priority 1

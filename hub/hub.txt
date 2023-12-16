@@ -1,0 +1,5 @@
+hub HG002 v1.0 Assembly Hub For CenSat
+shortLabel HG002 CenSat
+longLabel HG002 v1.0 CenSat Hub
+genomesFile genomes.txt
+email juklucas@ucsc.edu hlouks@ucsc.edu 
