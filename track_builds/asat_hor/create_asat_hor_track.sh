@@ -17,7 +17,7 @@ bedToBigBed \
     -extraIndex=name \
     -type=bed9 \
     -tab \
-    -as=.HG002_censat_browser/track_builds/asat_hor/asat_hor.as \ \
+    -as=HG002_censat_browser/track_builds/asat_hor/asat_hor.as \
     -sizesIs2Bit \
     AS-HOR-vs-HG002_asm_v1.0_forbb.bed \
     hg002v1.0.fasta.2bit \
