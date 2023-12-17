@@ -25,7 +25,7 @@ bedToBigBed \
     -extraIndex=name \
     -type=bed9 \
     -tab \
-    -as=../hub/monomers.as \
+    -as=HG002_censat_browser/track_builds/asat_strand/asat_strand.as \
     -sizesIs2Bit \
     AS-strand-vs-HG002_asm_v1.0.forbb.bed \
     hg002v1.0.fasta.2bit \
