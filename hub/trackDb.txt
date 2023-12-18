@@ -28,8 +28,6 @@ type bigBed 9
 bigDataUrl AS-strand-vs-HG002_asm_v1.0.bb
 priority 1
 
-
-
 ##
 # varRep
 ##
@@ -60,13 +58,27 @@ type bigBed 9
 bigDataUrl HG002_asm_v1.0_verkko_v1.0_HOR_StV.bb
 priority 1
 
+##
+# varRep
+##
+track ASat_CDR
+shortLabel ASat CDR
+longLabel ASat Centromer Dip Region Predictions
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 4
+bigDataUrl hg002.merged.named.CDR.bb
+priority 1
 
 ##
 # varRep
 ##
-track ASat_for_CenSat
-shortLabel ASat for CenSat
-longLabel ASat Annotation For Final CenSat Track
+track ASat_Summary
+shortLabel ASat Summary
+longLabel ASat Annotation Summarized
 group varRep
 visibility hide
 itemRgb on
@@ -75,7 +87,6 @@ maxWindowToDraw 500000000
 type bigBed 9
 bigDataUrl HG002_asat_summary.bb
 priority 1
-
 
 ##
 # varRep
@@ -91,7 +102,6 @@ maxWindowToDraw 500000000
 type bigBed 9
 bigDataUrl hg002v1.0.HSat2and3_Regions.bb
 priority 1
-
 
 ##
 # varRep
