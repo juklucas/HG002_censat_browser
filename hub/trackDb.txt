@@ -63,7 +63,7 @@ priority 1
 ##
 track ASat_CDR
 shortLabel ASat CDR
-longLabel ASat Centromer Dip Region Predictions
+longLabel ASat Centromere Dip Region Predictions
 group varRep
 visibility hide
 itemRgb on
@@ -71,6 +71,21 @@ maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 4
 bigDataUrl hg002.merged.named.CDR.bb
+priority 1
+
+##
+# varRep
+##
+track ASat_5mC
+shortLabel ASat 5mC
+longLabel ASat 5mC Proportion From ONT Reads
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigWig
+bigDataUrl hg002v1.0.5mC.pileup.bigwig
 priority 1
 
 ##
