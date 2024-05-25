@@ -16,6 +16,8 @@ aws s3 cp \
     s3://human-pangenomics/submissions/278062c0-5e2e-11ed-bbdb-0a13c5208311--T2T_HG002_Evaluation/T2T_HG002_v1.0.1/Flagger_v0.4.0/HG002_v1.0.1_Intersection/HG002_v1.0.1_any_2_read_platforms.flagger_v0.4.0_analysis.flagger_final.intersection_per_comp.bed \
     .
 
+sed -i '1d' HG002_v1.0.1_any_2_read_platforms.flagger_v0.4.0_analysis.flagger_final.intersection_per_comp.bed
+sed -i '1d' HG002_v1.0.1_all_3_read_platforms.flagger_v0.4.0_analysis.flagger_final.intersection_per_comp.bed
 
 conda activate ucsc-bedtobigbed
 
