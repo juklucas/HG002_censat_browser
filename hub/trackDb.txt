@@ -132,3 +132,33 @@ maxWindowToDraw 500000000
 type bigBed 4 + 6
 bigDataUrl hg002v1.0.RM.bb
 priority 1
+
+##
+# map
+##
+track Flagger_any_2_platforms
+shortLabel Flagger any 2
+longLabel Flagger any 2 Platforms
+group map
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl hg002.flagger_any_2_platforms.bb
+priority 2
+
+##
+# map
+##
+track Flagger_all_3_platforms
+shortLabel Flagger all 3
+longLabel Flagger all 3 Platforms
+group map
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl hg002.flagger_all_3_platforms.bb
+priority 2
