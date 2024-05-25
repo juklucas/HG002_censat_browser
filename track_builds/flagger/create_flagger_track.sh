@@ -23,7 +23,7 @@ bedToBigBed \
     -extraIndex=name \
     -type=bed9 \
     -tab \
-    -as=HG002_censat_browser/track_builds/asat_cdr/asat_cdr.as \
+    -as=HG002_censat_browser/track_builds/flagger/flagger.as \
     -sizesIs2Bit \
     HG002_v1.0.1_all_3_read_platforms.flagger_v0.4.0_analysis.flagger_final.intersection_per_comp.bed  \
     hg002v1.0.fasta.2bit \
@@ -33,7 +33,7 @@ bedToBigBed \
     -extraIndex=name \
     -type=bed9 \
     -tab \
-    -as=HG002_censat_browser/track_builds/asat_cdr/asat_cdr.as \
+    -as=HG002_censat_browser/track_builds/flagger/flagger.as \
     -sizesIs2Bit \
     HG002_v1.0.1_any_2_read_platforms.flagger_v0.4.0_analysis.flagger_final.intersection_per_comp.bed  \
     hg002v1.0.fasta.2bit \

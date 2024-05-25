@@ -1,5 +1,5 @@
-table ASat_HOR
-"ASat Higher Order Repeat monomer classification: monomer-by-monomer HOR annotation of human alpha satellites"
+table Flagger
+"Flagger bed file of potentially problematic assembly regions"
     (
     string chrom;    "Genomic sequence name"
     uint chromStart;     "Start in genomic sequence"
