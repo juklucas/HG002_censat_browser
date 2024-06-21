@@ -133,6 +133,39 @@ type bigBed 4 + 6
 bigDataUrl hg002v1.0.RM.bb
 priority 1
 
+
+##
+# varRep
+##
+track CENP-B
+shortLabel CENP-B
+longLabel CENP-B Binding Sites
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 4 + 6
+bigDataUrl hg002v1.0_cenpb.bb
+priority 1
+
+
+##
+# varRep
+##
+track pJalpha
+shortLabel pJalpha
+longLabel pJalpha Binding Sites
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 4 + 6
+bigDataUrl hg002v1.0_pjalpha.bb
+priority 1
+
+
 ##
 # map
 ##
