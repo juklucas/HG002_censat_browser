@@ -8,7 +8,7 @@ conda activate ucsc-bedtobigbed
 
 bedToBigBed \
     -extraIndex=name \
-    -type=bed4 \
+    -type=bed9 \
     -tab \
     -as=HG002_censat_browser/track_builds/asat_pjalpha/asat_pjalpha.as \
     -sizesIs2Bit \
