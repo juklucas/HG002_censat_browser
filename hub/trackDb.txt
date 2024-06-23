@@ -3,14 +3,14 @@
 ##
 track ASat_SF
 shortLabel ASat SF
-longLabel ASat SF classification: monomer-by-monomer annotation of human alpha satellite superfamilies
+longLabel ASat SF classification: monomer-by-monomer annotation of human alpha satellite superfamilies v1.1
 group varRep
 visibility hide
 itemRgb on
 maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 9
-bigDataUrl AS-SF-vs-HG002_asm_v1.0.bb
+bigDataUrl AS-SF-vs-HG002_asm_v1.0.1.bb
 priority 1
 
 ##
@@ -33,14 +33,14 @@ priority 1
 ##
 track ASat_HOR
 shortLabel ASat HOR
-longLabel ASat HOR classification: monomer-by-monomer annotation of human alpha satellite HORs
+longLabel ASat HOR classification: monomer-by-monomer annotation of human alpha satellite HORs v1.1
 group varRep
 visibility hide
 itemRgb on
 maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 9
-bigDataUrl AS-HOR-vs-HG002_asm_v1.0.bb
+bigDataUrl AS-HOR-vs-hg002v1.0.1.bb
 priority 1
 
 ##
@@ -56,36 +56,6 @@ maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 9
 bigDataUrl HG002_asm_v1.0_verkko_v1.0_HOR_StV.bb
-priority 1
-
-##
-# varRep
-##
-track ASat_CDR
-shortLabel ASat CDR
-longLabel ASat Centromere Dip Region Predictions
-group varRep
-visibility hide
-itemRgb on
-maxItems 1000000
-maxWindowToDraw 500000000
-type bigBed 4
-bigDataUrl hg002.merged.named.CDR.bb
-priority 1
-
-##
-# varRep
-##
-track ASat_5mC
-shortLabel ASat 5mC
-longLabel ASat 5mC Proportion From ONT Reads
-group varRep
-visibility hide
-itemRgb on
-maxItems 1000000
-maxWindowToDraw 500000000
-type bigWig
-bigDataUrl hg002v1.0.5mC.pileup.bigwig
 priority 1
 
 ##
@@ -133,6 +103,373 @@ type bigBed 4 + 6
 bigDataUrl hg002v1.0.RM.bb
 priority 1
 
+## 
+# DiMeLo
+##
+track R10_Dimelo_MsIgg_control_BAM
+shortLabel R10 Dimelo MsIgg BAM
+longLabel R10 Dimelo MsIgg Control BAM
+group DiMeLo
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bam
+bamColorMode tag
+bigDataUrl ./dimelo/01_09_24_R1041_DiMeLo_MsIgg_5mC_6mA_winnowmap_sorted_sorted_clean_filtered.bam
+priority 1
+
+## 
+# DiMeLo
+##
+track R10_Dimelo_RbIgg_control_BAM
+shortLabel R10 Dimelo RbIgg BAM
+longLabel R10 Dimelo RbIgg Control BAM
+group DiMeLo
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bam
+bamColorMode tag
+bigDataUrl ./dimelo/01_09_24_R1041_DiMeLo_RbIgg_5mC_6mA_winnowmap_sorted_sorted_clean_filtered.bam
+priority 1
+
+## 
+# DiMeLo
+##
+track R1041_DiMeLoAdaptive_CENPA_BAM
+shortLabel AdaptiveSeq CENPA BAM
+longLabel R10 Dimelo AdaptiveSeq CENPA BAM
+group DiMeLo
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bam
+bamColorMode tag
+bigDataUrl ./dimelo/01_09_24_R1041_DiMeLoAdaptive_CENPA_5mC_6mA_winnowmap_sorted_sorted_clean_filtered.bam
+priority 1
+
+## 
+# DiMeLo
+##
+track R10_Dimelo_AdaptiveSeq_CENPB_BAM
+shortLabel AdaptiveSeq CENPB BAM
+longLabel R10 Dimelo AdaptiveSeq CENPB BAM
+group DiMeLo
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bam
+bamColorMode tag
+bigDataUrl ./dimelo/11_28_23_R1041_DiMeLoAdaptive_CENPB_5mC_6mA_winnowmap_sorted_sorted_clean.bam
+priority 1
+
+## 
+# DiMeLo
+##
+track R10_Dimelo_AdaptiveSeq_CENPC_BAM
+shortLabel AdaptiveSeq CENPC BAM
+longLabel R10 Dimelo AdaptiveSeq CENPC BAM
+group DiMeLo
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bam
+bamColorMode tag
+bigDataUrl ./dimelo/01_09_24_R1041_DiMeLoAdaptive_CENPC_5mC_6mA_winnowmap_sorted_sorted_clean_filtered.bam
+priority 1
+
+## 
+# DiMeLo
+##
+#track R10_Dimelo_AdaptiveSeq_CENPA_hmmCDRs
+#shortLabel AdaptiveSeq CENPA hmmCDRs bed
+#longLabel R10 Dimelo AdaptiveSeq CENPC hmmCDRs bed
+#group DiMeLo
+#visibility hide
+#itemRgb on
+#maxItems 1000000
+#maxWindowToDraw 500000000
+#type bigBed 9
+#bigDataUrl ./dimelo2/CENPA/01_09_24_R1041_DiMeLoAdaptive_CENPA.hmmCDR.bb
+#priority 1
+
+## 
+# DiMeLo
+##
+#track R10_Dimelo_AdaptiveSeq_CENPA_5mC
+#shortLabel AdaptiveSeq CENPA 5mC bed
+#longLabel R10 Dimelo AdaptiveSeq CENPC 5mC bed
+#group DiMeLo
+#visibility hide
+#itemRgb on
+#maxItems 1000000
+#maxWindowToDraw 500000000
+#type bed 12
+#bigDataUrl ./dimelo2/CENPA/01_09_24_R1041_DiMeLoAdaptive_CENPA_5mC_6mA_winnowmap_sorted_sorted_clean_filtered.5mC.bed
+#priority 1
+
+## 
+# DiMeLo
+##
+#track R10_Dimelo_AdaptiveSeq_CENPA_6mA
+#shortLabel AdaptiveSeq CENPA 6mA bed
+#longLabel R10 Dimelo AdaptiveSeq CENPC 6mA bed
+#group DiMeLo
+#visibility hide
+#itemRgb on
+#maxItems 1000000
+#maxWindowToDraw 500000000
+#type bed 12
+#bigDataUrl ./dimelo2/CENPA/01_09_24_R1041_DiMeLoAdaptive_CENPA_5mC_6mA_winnowmap_sorted_sorted_clean_filtered.m6a.bed
+#priority 1
+
+## 
+# CDRs
+##
+track hg002v1.0_hifi_revio_3cells_hmmCDR
+shortLabel Q100 HiFi Revio hmmCDRs 
+longLabel Q100 hg002v1.0 hifi_revio 3cells hmmCDR bed
+group CDRs
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl ./CDRs/hg002v1.0_hifi_revio_3cells.hmmCDR.bb
+priority 1
+
+## 
+# CDRs
+##
+track hg002v1.0_ont_r10_ul_dorado_hmmCDR
+shortLabel Q100 UL ONT hmmCDRs
+longLabel Q100 hg002v1.0_ont_r10_ul_dorado hmmCDR bed
+group CDRs
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl ./CDRs/hg002v1.0_ont_r10_ul_dorado.hmmCDR.bb
+priority 1
+
+## 
+# methylation
+##
+track ONT_pileup_5mC
+shortLabel Q100 ONT 5mC  
+longLabel Q100 hg002v1.0_ont_r10_ul_dorado 5mC Modkit Fraction Modified 
+group methylation
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigWig
+autoScale on
+bigDataUrl ./methylation/hg002v1.0_ont_r10_ul_dorado.minimap2_secphase_pileup-percentile66_5mC_validcov5_fracmod.bigwig
+priority 1
+
+## 
+# methylation
+##
+track ONT_pileup_5hmC
+shortLabel Q100 ONT 5hmC
+longLabel Q100 hg002v1.0_ont_r10_ul_dorado 5hmC Modkit Fraction Modified
+group methylation
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigWig
+autoScale on
+bigDataUrl ./methylation/hg002v1.0_ont_r10_ul_dorado.minimap2_secphase_pileup-percentile66_5hmC_validcov5_fracmod.bigwig
+priority 1
+
+## 
+# methylation
+##
+track ONT_Duplex_Hemi-Methylation
+shortLabel ONT Duplex Aggregate Hemi-Methylation
+longLabel ONT Duplex Aggregate Net Hemi-Methylation
+group methylation
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigWig
+autoScale on
+bigDataUrl ./duplex/1_3_23_R1041_Duplex_HG002_merge_dorado061_sup_5mCG_5hmCG_duplex-reads_winnowmap_secphase043_sort.pileup_net_cov.bigwig
+priority 1
+
+## 
+# fiberseq
+##
+track ONT_FiberSeq_5mC 
+shortLabel ONT FiberSeq 5mC
+longLabel 07_05_23_R1041_FiberSeq_HG002.dorado061.winnowmap_sort_5mC
+group fiberseq
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 12
+bigDataUrl ./fiberseq/07_05_23_R1041_FiberSeq_HG002.dorado061.winnowmap_sort.5mC.bb
+priority 1
+
+## 
+# fiberseq
+##
+track ONT_FiberSeq_6mA
+shortLabel ONT FiberSeq 6mA
+longLabel 07_05_23_R1041_FiberSeq_HG002.dorado061.winnowmap_sort_6mA
+group fiberseq
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 12
+bigDataUrl ./fiberseq/07_05_23_R1041_FiberSeq_HG002.dorado061.winnowmap_sort.6mA.bb
+priority 1
+
+## 
+# fiberseq
+##
+track ONT_FiberSeq_msp 
+shortLabel ONT FiberSeq MSP
+longLabel 07_05_23_R1041_FiberSeq_HG002.dorado061.winnowmap_sort_ft-msp
+group fiberseq
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 12
+bigDataUrl ./fiberseq/07_05_23_R1041_FiberSeq_HG002.dorado061.winnowmap_sort.ft-msp.bb
+priority 1
+
+## 
+# fiberseq
+##
+track ONT_FiberSeq_nuc
+shortLabel ONT FiberSeq Nucleosomes
+longLabel 07_05_23_R1041_FiberSeq_HG002.dorado061.winnowmap_sort_ft-nuc
+group fiberseq
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 12
+bigDataUrl ./fiberseq/07_05_23_R1041_FiberSeq_HG002.dorado061.winnowmap_sort.ft-nuc.bb
+priority 1
+
+## 
+# fiberseq
+##
+#track HiFi_FiberSeq_5mC 
+#shortLabel HiFi FiberSeq 5mC
+#longLabel HiFi_HG002_fiber_stergachis.merged.winnowmap_sort.5mC
+#group fiberseq
+#visibility hide
+#itemRgb on
+#maxItems 1000000
+#maxWindowToDraw 500000000
+#type bigBed 12
+#bigDataUrl ./fiberseq/HiFi_HG002_fiber_stergachis.merged.winnowmap_sort.5mC.bb
+#priority 1
+
+## 
+# fiberseq
+##
+#track HiFi_FiberSeq_6mA
+#shortLabel HiFi FiberSeq 6mA
+#longLabel HiFi_HG002_fiber_stergachis.merged.winnowmap_sort.6mA
+#group fiberseq
+#visibility hide
+#itemRgb on
+#maxItems 1000000
+#maxWindowToDraw 500000000
+#type bigBed 12
+#bigDataUrl ./fiberseq/HiFi_HG002_fiber_stergachis.merged.winnowmap_sort.6mA.bb
+#priority 1
+
+## 
+# fiberseq
+##
+#track HiFi_FiberSeq_MSP
+#shortLabel HiFi FiberSeq MSP
+#longLabel HiFi_HG002_fiber_stergachis.merged.winnowmap_sort.ft-msp
+#group fiberseq
+#visibility hide
+#itemRgb on
+#maxItems 1000000
+#maxWindowToDraw 500000000
+#type bigBed 12
+#bigDataUrl ./fiberseq/HiFi_HG002_fiber_stergachis.merged.winnowmap_sort.ft-msp.bb
+#priority 1
+
+## 
+# fiberseq
+##
+#track HiFi_FiberSeq_Nucleosomes
+#shortLabel Hifi FiberSeq Nucleosomes
+#longLabel HiFi_HG002_fiber_stergachis.merged.winnowmap_sort.ft-nuc
+#group fiberseq
+#visibility hide
+#itemRgb on
+#maxItems 1000000
+#maxWindowToDraw 500000000
+#type bigBed 12
+#bigDataUrl ./fiberseq/HiFi_HG002_fiber_stergachis.merged.winnowmap_sort.ft-nuc.bb
+#priority 1
+
+##
+# varRep
+##
+track Centromere_Satellite_v1.0
+shortLabel CenSatv1.0
+longLabel Centromeric Satellite Annotation
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl hg002v1.0.1.cenSatv1.0.bb
+priority 1
+
+##
+# map
+##
+track Flagger_any_2_platforms
+shortLabel Flagger any 2
+longLabel Flagger any 2 Platforms
+group map
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl hg002.flagger_any_2_platforms.bb
+priority 2
+
+##
+# map
+##
+track Flagger_all_3_platforms
+shortLabel Flagger all 3
+longLabel Flagger all 3 Platforms
+group map
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl hg002.flagger_all_3_platforms.bb
+priority 2
 
 ##
 # varRep
@@ -164,34 +501,3 @@ maxWindowToDraw 500000000
 type bigBed 9
 bigDataUrl hg002v1.0_pjalpha.bb
 priority 1
-
-
-##
-# map
-##
-track Flagger_any_2_platforms
-shortLabel Flagger any 2
-longLabel Flagger any 2 Platforms
-group map
-visibility hide
-itemRgb on
-maxItems 1000000
-maxWindowToDraw 500000000
-type bigBed 9
-bigDataUrl hg002.flagger_any_2_platforms.bb
-priority 2
-
-##
-# map
-##
-track Flagger_all_3_platforms
-shortLabel Flagger all 3
-longLabel Flagger all 3 Platforms
-group map
-visibility hide
-itemRgb on
-maxItems 1000000
-maxWindowToDraw 500000000
-type bigBed 9
-bigDataUrl hg002.flagger_all_3_platforms.bb
-priority 2
