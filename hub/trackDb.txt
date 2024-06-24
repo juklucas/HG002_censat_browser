@@ -445,7 +445,7 @@ priority 1
 # varRep
 ##
 track Centromere_Satellite_Strand_v2.0
-shortLabel CenSatv1.0
+shortLabel CenSatStrandv2.0
 longLabel Centromeric Satellite Strand
 group varRep
 visibility hide
@@ -543,7 +543,7 @@ visibility hide
 maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 3
-bigDataUrl Minimap2.100000.mappable.all.bed
+bigDataUrl Minimap2.100000.mappable.all.bb
 priority 1
 
 ##
@@ -571,5 +571,5 @@ visibility hide
 maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 3
-bigDataUrl Winnowmap.100000.mappable.all.bed
+bigDataUrl Winnowmap.100000.mappable.all.bb
 priority 1
