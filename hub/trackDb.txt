@@ -429,8 +429,8 @@ priority 1
 ##
 # varRep
 ##
-track Centromere_Satellite_v1.0
-shortLabel CenSatv1.0
+track Centromere_Satellite_v2.0
+shortLabel CenSatv2.0
 longLabel Centromeric Satellite Annotation
 group varRep
 visibility hide
@@ -438,7 +438,22 @@ itemRgb on
 maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 9
-bigDataUrl hg002v1.0.1.cenSatv1.0.bb
+bigDataUrl hg002v1.0.1.cenSatv2.0.bb
+priority 1
+
+##
+# varRep
+##
+track Centromere_Satellite_Strand_v2.0
+shortLabel CenSatv1.0
+longLabel Centromeric Satellite Strand
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl hg002v1.0.1.cenSatStrandv2.0.bb
 priority 1
 
 ##
@@ -500,4 +515,61 @@ maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 9
 bigDataUrl hg002v1.0_pjalpha.bb
+priority 1
+
+
+##
+# map
+##
+track Minimap2.15000.mappable
+shortLabel MiniMap2.15k
+longLabel Minimap2 15kb reads mappable 
+group map
+visibility hide
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 3
+bigDataUrl Minimap2.15000.mappable.all.bb
+priority 1
+
+##
+# map
+##
+track Minimap2.100000.mappable
+shortLabel MiniMap2.100k
+longLabel Minimap2 100kb reads mappable 
+group map
+visibility hide
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 3
+bigDataUrl Minimap2.100000.mappable.all.bed
+priority 1
+
+##
+# map
+##
+track Winnowmap.15000.mappable
+shortLabel Winnowmap.15k
+longLabel Winnowmap 15kb reads mappable 
+group map
+visibility hide
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 3
+bigDataUrl Winnowmap.15000.mappable.all.bb
+priority 1
+
+##
+# map
+##
+track Winnowmap.100000.mappable
+shortLabel Winnowmap.100k
+longLabel Winnowmap 100kb reads mappable 
+group map
+visibility hide
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 3
+bigDataUrl Winnowmap.100000.mappable.all.bed
 priority 1
