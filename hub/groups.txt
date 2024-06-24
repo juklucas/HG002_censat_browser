@@ -11,10 +11,25 @@ label Mapping and Sequencing
 priority 2
 defaultIsClosed 0
 
+name varRep
+label Variation and Repeats
+priority 2
+defaultIsClosed 0
+
+name methylation
+label CpG Methylation
+priority 2.25
+defaultIsClosed 1
+
+name CDRs
+label CDR Annotations
+priority 2.5
+defaultIsClosed 1
+
 name genes
 label Genes and Gene Predictions
 priority 3
-defaultIsClosed 0
+defaultIsClosed 1
 
 name pub
 label Phenotype and Literature
@@ -34,12 +49,17 @@ defaultIsClosed 1
 name compGeno
 label Comparative Genomics
 priority 6
-defaultIsClosed 0
+defaultIsClosed 1
 
-name varRep
-label Variation and Repeats
+name fiberseq
+label Fiber-seq Tracks
 priority 7
-defaultIsClosed 0
+defaultIsClosed 1
+
+name DiMeLo
+label DiMeLo Tracks
+priority 8
+defaultIsClosed 1
 
 name x
 label Experimental Tracks
