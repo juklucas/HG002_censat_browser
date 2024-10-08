@@ -573,3 +573,18 @@ maxWindowToDraw 500000000
 type bigBed 3
 bigDataUrl Winnowmap.100000.mappable.all.bb
 priority 1
+
+##
+# varRep
+##
+track kmeans_horhap
+shortLabel kmeans horhap
+longLabel CHM13-based low-k kmeans horhaps HMMERed on HG002
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl horhap/chm13_low-k_kmeans-horhaps_hmmer_to_hg002.bb
+priority 1
