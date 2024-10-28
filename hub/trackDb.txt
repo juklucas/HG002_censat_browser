@@ -588,3 +588,18 @@ maxWindowToDraw 500000000
 type bigBed 9
 bigDataUrl horhap/chm13_low-k_kmeans-horhaps_hmmer_to_hg002.bb
 priority 1
+
+##
+# varRep
+##
+track horhap
+shortLabel horhap
+longLabel HOR Haplotypes
+group varRep
+visibility hide
+itemRgb on
+maxItems 1000000
+maxWindowToDraw 500000000
+type bigBed 9
+bigDataUrl horhap/HG002_horhap.v0.1.bb
+priority 1
