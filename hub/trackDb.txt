@@ -592,9 +592,9 @@ priority 1
 ##
 # varRep
 ##
-track horhap
-shortLabel horhap
-longLabel HOR Haplotypes
+track ASat_HOR-Haplotypes
+shortLabel ASat HOR-Haplotypes
+longLabel ASat HOR-Haplotypes
 group varRep
 visibility hide
 itemRgb on
