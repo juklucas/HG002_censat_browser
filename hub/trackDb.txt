@@ -601,5 +601,5 @@ itemRgb on
 maxItems 1000000
 maxWindowToDraw 500000000
 type bigBed 9
-bigDataUrl horhap/HG002_horhap.v0.1.bb
+bigDataUrl horhap/HG002_horhap.v2.1.bb
 priority 1
